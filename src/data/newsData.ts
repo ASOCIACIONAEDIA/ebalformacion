@@ -43,17 +43,17 @@ export const newsItems: NewsItem[] = [
   },
   {
     id: 'news-4',
-    title: 'AEDIA celebra el éxito del evento FamilIA en Gines',
+    title: 'Ebal Formacion celebra el éxito del evento FamilIA en Gines',
     subtitle: 'Becas otorgadas y reconocimiento del Sello AI+2025-2026 al Ayuntamiento.',
     image: 'https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg',
-    category: 'Eventos AEDIA',
+    category: 'Eventos Ebal',
     date: '25 Ene 2025',
-    author: 'Equipo AEDIA',
+    author: 'Equipo Ebal Formacion',
     readTime: 'Lectura 4 min'
   },
   {
     id: 'news-5',
-    title: 'AEDIA colabora en "El Gran Ariscalín" con ilustraciones IA',
+    title: 'Ebal Formacion colabora en "El Gran Ariscalín" con ilustraciones IA',
     subtitle: 'Un proyecto pionero que fusiona literatura infantil e inteligencia artificial.',
     image: 'https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg',
     category: 'Creatividad IA',
@@ -63,7 +63,7 @@ export const newsItems: NewsItem[] = [
   },
   {
     id: 'news-6',
-    title: 'AEDIA presente en el evento AI2030 Madrid',
+    title: 'Ebal Formacion presente en el evento AI2030 Madrid',
     subtitle: 'Compartiendo conocimiento junto a Google for Startups, Xataka y Miraiku.',
     image: 'https://images.pexels.com/photos/5940721/pexels-photo-5940721.jpeg',
     category: 'Networking',
@@ -76,12 +76,12 @@ export const newsItems: NewsItem[] = [
 export const featuredArticles: NewsItem[] = [
   {
     id: 'featured-1',
-    title: 'AEDIA participa como partner activo en IA Educativa - Sevilla',
-    subtitle: 'Evento híbrido de acercamiento a la IA en Educación organizado por INTEDUA y ETSII US con colaboración de AEDIA y referentes internacionales.',
+    title: 'Ebal Formacion participa como partner activo en eventos de innovación educativa',
+    subtitle: 'Evento híbrido de acercamiento a la IA en Educación con colaboración de Ebal Formacion y referentes internacionales.',
     image: 'https://images.pexels.com/photos/8438951/pexels-photo-8438951.jpeg',
     category: 'INFORME ESPECIAL',
     date: '10 Oct 2025',
-    author: 'Equipo AEDIA',
+    author: 'Equipo Ebal Formacion',
     readTime: 'Lectura 8 min'
   },
   {

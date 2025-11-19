@@ -319,12 +319,6 @@ const Certifications: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="flex justify-center mb-12 sm:mb-16"
             >
-              <button
-                onClick={() => setIsEnrollmentModalOpen(true)}
-                className="bg-yellow-400 text-gray-900 px-8 sm:px-12 py-3 sm:py-4 rounded-xl font-bold text-lg sm:text-xl hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-lg"
-              >
-                Matricúlate Ahora
-              </button>
             </motion.div>
 
             {/* Stats Grid */}
@@ -664,13 +658,6 @@ const Certifications: React.FC = () => {
               >
                 <Info className="h-5 w-5" />
                 <span>Solicitar Información</span>
-              </button>
-              <button
-                onClick={() => setIsEnrollmentModalOpen(true)}
-                className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-colors flex items-center justify-center space-x-2"
-              >
-                <Trophy className="h-5 w-5" />
-                <span>Matricúlate Ahora</span>
               </button>
             </div>
           </motion.div>

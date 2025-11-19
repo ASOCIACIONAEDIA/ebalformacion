@@ -92,28 +92,46 @@ const AboutSection = () => {
 
         {/* Value Proposition */}
         <motion.div
-          className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 md:p-12 text-white shadow-xl"
+          className="bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 rounded-3xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-6">
-              ¿Por qué elegir Ebal Formacion?
-            </h3>
-            <div className="grid md:grid-cols-3 gap-8 mt-8">
-              <div>
-                <div className="text-4xl font-bold mb-2">+15</div>
-                <div className="text-blue-100">Años de Experiencia</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">+1000</div>
-                <div className="text-blue-100">Profesionales Formados</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">95%</div>
-                <div className="text-blue-100">Satisfacción</div>
+          {/* Decorative elements */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
+          
+          <div className="relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h3 className="text-2xl md:text-3xl font-bold mb-8">
+                ¿Por qué elegir Ebal Formacion?
+              </h3>
+              <div className="grid md:grid-cols-3 gap-8 mt-8">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20"
+                >
+                  <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">+15</div>
+                  <div className="text-blue-100 font-medium">Años de Experiencia</div>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20"
+                >
+                  <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">+1000</div>
+                  <div className="text-blue-100 font-medium">Profesionales Formados</div>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20"
+                >
+                  <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">95%</div>
+                  <div className="text-blue-100 font-medium">Satisfacción</div>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -128,7 +146,7 @@ const AboutSection = () => {
         >
           <Link
             to="/sobrenosotros"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg"
+            className="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-4 px-10 rounded-xl transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl"
           >
             Conoce Más Sobre Nosotros
           </Link>

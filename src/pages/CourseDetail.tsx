@@ -28,7 +28,7 @@ const GetIcon = ({ name }: { name?: string }) => {
 };
 
 // Define default values
-const defaultHeroColors = ['bg-purple-600', 'bg-indigo-500', 'bg-blue-500', 'bg-pink-500'];
+const defaultHeroColors = ['bg-emerald-600', 'bg-teal-500', 'bg-cyan-500', 'bg-sky-500'];
 
 
 // --- NUEVO: Definición de FAQs por curso ---
@@ -216,9 +216,9 @@ const CourseDetail = () => {
 
 
   // --- Typing Effect Logic for Ending Text - Modified for Loop ---
-  const endingFullText = "¡El momento de la IA es ahora y tú puedes ser parte de él!";
-  const endingHighlightStart = endingFullText.indexOf('ahora');
-  const endingHighlightEnd = endingHighlightStart + 'ahora'.length;
+  const endingFullText = "Transforma tu futuro profesional con formación especializada en SAP e Inteligencia Artificial";
+  const endingHighlightStart = endingFullText.indexOf('SAP e Inteligencia Artificial');
+  const endingHighlightEnd = endingHighlightStart + 'SAP e Inteligencia Artificial'.length;
   const endingTypingSpeed = 60;
   const endingPauseAfterComplete = 4000; // Pause duration in ms before restart
 
@@ -286,7 +286,7 @@ const CourseDetail = () => {
     'Dominar el uso de modelos LLM y herramientas de IA para la docencia.',
     'Crear recursos y actividades educativas innovadoras con IA.',
     'Automatizar procesos educativos y administrativos.',
-    'Analizar y aplicar buenas prácticas éticas en el uso de IA educativa.',
+    'Analizar y aplicar buenas prácticas éticas en el uso de IA.',
     'Liderar proyectos de transformación digital en centros educativos.'
   ];
   // --- End NUEVO: Textos específicos para IA Educación ---
@@ -302,6 +302,19 @@ const CourseDetail = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section - Use dynamic colors */}
       <section className="relative bg-gradient-to-br from-purple-900 to-indigo-800 text-white py-16 pb-24 overflow-hidden">
+        {/* Background Image for Bonificable Courses */}
+        {course.type === 'bonificable' && (
+          <div className="absolute inset-0 z-0">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+              alt="Formación profesional"
+              className="w-full h-full object-cover opacity-20"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-indigo-800/80"></div>
+          </div>
+        )}
+        
         {/* Animated Shapes Background - Use dynamic colors */}
         <div className="absolute inset-0 opacity-50 z-0">
           <div className={`absolute top-0 left-1/4 w-96 h-96 ${heroColors[0]} rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000`}></div>
@@ -378,13 +391,6 @@ const CourseDetail = () => {
                 >
                   Solicitar información
                 </button>
-                {/* Matriculate Button - Opens modal */}
-                <button
-                  onClick={() => setIsEnrollmentModalOpen(true)} // Open enrollment modal
-                  className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-yellow-500 transition-colors"
-                >
-                  Matricúlate Ahora
-                </button>
                 {/* Download Button - Now opens modal */}
                 {course.syllabusUrl ? (
                   <button
@@ -414,7 +420,7 @@ const CourseDetail = () => {
               className="hidden lg:block"
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl z-10">
-                <img src={course.imageUrl} alt={course.title} className="w-full h-auto max-h-[450px] object-cover" />
+                <img src={course.imageUrl} alt={course.title} className="w-full h-auto max-h-[450px] object-cover rounded-2xl" loading="lazy" />
               </div>
             </motion.div>
           </div>
@@ -458,15 +464,24 @@ const CourseDetail = () => {
             {/* Grid layout for preparation points */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {course.preparationPoints.map((point, index) => (
-                <div key={index} className="flex items-start p-6 bg-gray-50 rounded-lg border border-gray-200">
-                  <div className="mr-4 flex-shrink-0 pt-1">
-                    <GetIcon name={point.iconName} /> {/* Use helper to render icon */}
+                <motion.div 
+                  key={index} 
+                  className="flex items-start p-6 bg-gradient-to-br from-gray-50 to-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all group"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  <div className="mr-4 flex-shrink-0 pt-1 group-hover:scale-110 transition-transform">
+                    <div className="bg-purple-100 rounded-lg p-2">
+                      <GetIcon name={point.iconName} />
+                    </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{point.title}</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-purple-700 transition-colors">{point.title}</h3>
                     <p className="text-gray-600 leading-relaxed">{point.description}</p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </motion.div>
@@ -474,10 +489,10 @@ const CourseDetail = () => {
       </section>
 
       {/* Viable Tutorization Section - REDESIGNED & SWAPPED */}
-      <section className="py-16 bg-purple-50">
+      <section className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
         <div className="container mx-auto px-4">
           <motion.h2
-            className="text-3xl font-medium text-center text-gray-800 mb-12 font-nunito"
+            className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4 font-nunito"
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -485,6 +500,15 @@ const CourseDetail = () => {
           >
             Tutorización Inteligente
           </motion.h2>
+          <motion.p
+            className="text-lg text-center text-gray-600 mb-12 max-w-2xl mx-auto"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            Acompañamiento personalizado con tutores expertos y tecnología de vanguardia
+          </motion.p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* SWAPPED: Right Column First (Platform Showcase) */}
             <motion.div
@@ -495,10 +519,10 @@ const CourseDetail = () => {
               className="relative p-3 self-center order-last lg:order-first"
             >
               {/* Blue Background Element */}
-              <div className="absolute inset-0 bg-blue-400 rounded-lg transform rotate-[-2deg] z-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl transform rotate-[-2deg] z-0 shadow-xl"></div>
 
               {/* Platform Showcase Component */}
-              <div className="relative z-10 overflow-hidden rounded-lg shadow-xl">
+              <div className="relative z-10 overflow-hidden rounded-xl shadow-2xl">
                 <PlatformShowcase />
               </div>
             </motion.div>
@@ -509,19 +533,23 @@ const CourseDetail = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="space-y-8 order-first lg:order-last"
+              className="space-y-6 order-first lg:order-last"
             >
-              <div className="flex items-start gap-4 p-6 bg-white rounded-lg shadow-md border border-gray-100">
-                <Brain className="h-10 w-10 text-purple-600 flex-shrink-0 mt-1" />
+              <div className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow group">
+                <div className="bg-gradient-to-br from-purple-100 to-indigo-100 rounded-xl p-3 flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <Brain className="h-10 w-10 text-purple-600" />
+                </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Plataforma AI-Learning</h3>
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-purple-700 transition-colors">Plataforma AI-Learning</h3>
                   <p className="text-gray-600 leading-relaxed">Plataforma AI-Learning para que aprendas a tu ritmo con entregas de proyectos y tareas prácticas.</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4 p-6 bg-white rounded-lg shadow-md border border-gray-100">
-                <Mail className="h-10 w-10 text-purple-600 flex-shrink-0 mt-1" />
+              <div className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow group">
+                <div className="bg-gradient-to-br from-purple-100 to-indigo-100 rounded-xl p-3 flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <Mail className="h-10 w-10 text-purple-600" />
+                </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Soporte Adicional</h3>
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-purple-700 transition-colors">Soporte Adicional</h3>
                   <p className="text-gray-600 leading-relaxed">Además, cuentas con soporte tutorizado por email para consultas más específicas con nuestros expertos.</p>
                 </div>
               </div>

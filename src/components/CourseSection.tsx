@@ -26,6 +26,7 @@ const CourseSection = () => {
                   src={course.imageUrl} 
                   alt={course.title}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black"></div>
                 <div className="absolute inset-0 p-6 flex flex-col justify-between text-white">

@@ -87,16 +87,16 @@ const getPlaceholderContent = (id: string): string => {
       `;
     case 'featured-1':
       return `
-        <p class="mb-4">Ebal Formacion participa como partner activo en IA Educativa, un evento híbrido que se celebró el viernes 10 de octubre de 2025 en la ETSII US (Av. de la Reina Mercedes, s/n, Sevilla). Esta experiencia de acercamiento a la IA en Educación fue organizada por la Asociación INTEDUA (IAEducativa) y ETSII US, con la colaboración de Ebal Formacion y referentes internacionales.</p>
-        <p class="mb-4">El evento reunió a expertos en inteligencia artificial aplicada a la educación, investigadores, docentes y profesionales del sector tecnológico para explorar las últimas tendencias y aplicaciones de la IA en entornos educativos. Ebal Formacion aportó su experiencia en metodologías innovadoras como VIABLE y su conocimiento en la formación de profesionales en IA.</p>
+        <p class="mb-4">Ebal Formacion participa como partner activo en eventos de innovación educativa, contribuyendo con su experiencia en metodologías innovadoras y su conocimiento en la formación de profesionales en IA.</p>
+        <p class="mb-4">El evento reunió a expertos en inteligencia artificial aplicada a la educación, investigadores, docentes y profesionales del sector tecnológico para explorar las últimas tendencias y aplicaciones de la IA en entornos educativos.</p>
         <h3 class="text-xl font-semibold mb-2 mt-6">Temáticas Abordadas en el Evento</h3>
         <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
           <li><strong>IA Personalizada en Educación:</strong> Cómo adaptar el aprendizaje a las necesidades individuales de cada estudiante.</li>
           <li><strong>Herramientas Educativas Inteligentes:</strong> Desarrollo y implementación de tutores IA y asistentes educativos.</li>
-          <li><strong>Ética en IA Educativa:</strong> Consideraciones sobre privacidad, sesgo y responsabilidad en sistemas educativos inteligentes.</li>
+          <li><strong>Ética en IA:</strong> Consideraciones sobre privacidad, sesgo y responsabilidad en sistemas educativos inteligentes.</li>
           <li><strong>Casos de Éxito:</strong> Experiencias reales de implementación de IA en instituciones educativas.</li>
         </ul>
-        <p>La participación de Ebal Formacion en este evento refuerza nuestro compromiso con la innovación educativa y nuestra posición como referente en la formación en inteligencia artificial. La colaboración con INTEDUA y la Universidad de Sevilla abre nuevas oportunidades para el desarrollo de proyectos conjuntos que beneficien al ecosistema educativo español.</p>
+        <p>La participación de Ebal Formacion en este evento refuerza nuestro compromiso con la innovación educativa y nuestra posición como referente en la formación en inteligencia artificial.</p>
       `;
     case 'featured-2':
       return `

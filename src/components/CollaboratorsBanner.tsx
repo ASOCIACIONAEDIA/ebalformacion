@@ -12,19 +12,18 @@ type Collaborator = {
 const collaborators: Collaborator[] = [
   {
     name: 'Meliá Hotels International',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Meli%C3%A1_Hotels_International_logo.svg',
+    logo: '/assets/MELIA.png',
     alt: 'Logo Meliá Hotels'
   },
   {
     name: 'Barceló Hotel Group',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Barcel%C3%B3_logo.svg',
+    logo: '/assets/BARCELO.jpg',
     alt: 'Logo Barceló'
   },
   {
-    name: 'Consejo Balear de Salud',
-    logo: 'https://www.caib.es/sacmicrofront/archivopub.do?ctrl=MCRST151ZI97531&id=97531',
-    alt: 'Logo Consejo Balear de Salud',
-    fallback: 'https://www.caib.es/logo.png'
+    name: 'Servei de Salut de les Illes Balears',
+    logo: '/assets/LOGO-SERVI-SALUD-BALEARES.jpg',
+    alt: 'Logo Servei de Salut de les Illes Balears'
   },
   {
     name: 'Laboris',

@@ -169,14 +169,14 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-6 left-0 right-0 z-50 px-4">
-      <nav className="container mx-auto px-6 py-3 bg-white rounded-xl shadow-lg">
+      <nav className="container mx-auto px-6 py-3 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-gray-100">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <img src={logoUrl} alt="Ebal Formacion Logo" className="h-10" />
+          <Link to="/" className="flex items-center space-x-2 group">
+            <img src={logoUrl} alt="Ebal Formacion Logo" className="h-10 transition-transform group-hover:scale-105" loading="eager" />
           </Link>
 
           {/* Desktop Menu - Uses updated mainLinks path */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-8">
             {renderLink(mainLinks[0])} {/* Inicio */}
             {coursesDropdown} {/* Cursos Bonificables Dropdown */}
             {programmingCoursesDropdown} {/* Cursos de Programación Dropdown */}
@@ -204,8 +204,8 @@ const Navbar = () => {
 
       {/* Mobile Menu - Uses updated mainLinks path */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg rounded-b-xl mt-2 mx-4">
-          <div className="px-4 pt-2 pb-4 space-y-2">
+        <div className="md:hidden bg-white/98 backdrop-blur-md shadow-2xl rounded-b-xl mt-2 mx-4 border border-gray-100">
+          <div className="px-4 pt-4 pb-6 space-y-2">
             {renderMobileLink(mainLinks[0])} {/* Inicio */}
             {mobileCoursesDropdown} {/* Cursos Bonificables Dropdown */}
             {mobileProgrammingCoursesDropdown} {/* Cursos de Programación Dropdown */}

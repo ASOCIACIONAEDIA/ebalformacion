@@ -333,15 +333,16 @@ const Bootcamp = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section con Formulario Visible */}
-      <div className="relative bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 pt-32 pb-20 overflow-hidden">
+      <div className="relative bg-gradient-to-br from-emerald-700 via-teal-800 to-cyan-900 pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         
         {/* Imagen de fondo */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/img11.png"
+            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
             alt="AI Engineer trabajando"
             className="w-full h-full object-cover opacity-30"
+            loading="eager"
           />
         </div>
 
@@ -859,32 +860,6 @@ const Bootcamp = () => {
                   <CheckCircle className="h-5 w-5 mr-2" />
                   <span className="text-sm">Portfolio profesional para entrevistas</span>
                 </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-                  <CheckCircle className="h-6 w-6 text-green-600" />
-                </div>
-                <h4 className="font-semibold text-gray-800 mb-2">Financiación Disponible</h4>
-                <p className="text-sm text-gray-600">Opciones de pago flexibles y financiación sin intereses</p>
-              </div>
-              
-              <div className="flex flex-col items-center">
-                <div className="bg-blue-100 rounded-full p-3 mb-3">
-                  <Laptop className="h-6 w-6 text-blue-600" />
-                </div>
-                <h4 className="font-semibold text-gray-800 mb-2">Plataforma Online</h4>
-                <p className="text-sm text-gray-600">Acceso 24/7 a contenidos y recursos educativos</p>
-              </div>
-              
-              <div className="flex flex-col items-center">
-                <div className="bg-purple-100 rounded-full p-3 mb-3">
-                  <Award className="h-6 w-6 text-purple-600" />
-                </div>
-                <h4 className="font-semibold text-gray-800 mb-2">Título Oficial</h4>
-                <p className="text-sm text-gray-600">Reconocimiento universitario con validez profesional</p>
               </div>
             </div>
           </motion.div>

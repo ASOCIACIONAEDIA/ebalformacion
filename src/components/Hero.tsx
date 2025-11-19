@@ -61,24 +61,25 @@ const Hero = () => {
           </motion.div>
 
           <motion.h1
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Formación Profesional en<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-indigo-300 to-blue-200">
-              Inteligencia Artificial y SAP
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 animate-gradient">
+              Inteligencia Artificial
             </span>
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl text-blue-100 mb-12 max-w-3xl mx-auto font-light"
+            className="text-lg md:text-xl lg:text-2xl text-blue-100 mb-12 max-w-3xl mx-auto font-light leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Impulsa tu carrera con formación especializada en las tecnologías más demandadas del mercado
+            Impulsa tu carrera con formación especializada en las tecnologías más demandadas del mercado. 
+            Certificaciones oficiales y metodología práctica.
           </motion.p>
 
           <motion.div
@@ -89,13 +90,13 @@ const Hero = () => {
           >
             <Link
               to="/cursos"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-block w-full sm:w-auto"
+              className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl inline-block w-full sm:w-auto text-center"
             >
               Explorar Cursos
             </Link>
             <Link
               to="/sobrenosotros"
-              className="bg-transparent border-2 border-white text-white font-semibold py-4 px-8 rounded-lg hover:bg-white hover:text-blue-900 transition-all inline-block w-full sm:w-auto"
+              className="bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-semibold py-4 px-8 rounded-xl hover:bg-white hover:text-blue-900 transition-all inline-block w-full sm:w-auto text-center"
             >
               Conoce Ebal
             </Link>

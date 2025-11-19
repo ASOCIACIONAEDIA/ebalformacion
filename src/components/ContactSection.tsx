@@ -91,8 +91,11 @@ const ContactSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="bg-gray-50 p-8 rounded-2xl shadow-md border border-gray-100 h-full">
-              <h3 className="text-2xl font-semibold mb-6 text-gray-800">Env铆anos tu Consulta</h3>
+            <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-xl border border-gray-100 h-full">
+              <h3 className="text-2xl font-semibold mb-6 text-gray-800 flex items-center">
+                <span className="w-1 h-8 bg-gradient-to-b from-purple-500 to-indigo-500 rounded-full mr-3"></span>
+                Env铆anos tu Consulta
+              </h3>
               <form onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
@@ -178,7 +181,7 @@ const ContactSection = () => {
                 <button
                   type="submit"
                   disabled={isSubmitted}
-                  className="bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg transition-colors w-full text-lg disabled:opacity-50"
+                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-semibold py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl w-full text-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
                   {isSubmitted ? 'Enviando...' : 'Enviar Mensaje'}
                 </button>
@@ -199,8 +202,16 @@ const ContactSection = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col space-y-8"
           >
-            <div className="bg-gradient-to-br from-purple-600 to-indigo-700 p-8 rounded-2xl shadow-xl text-white">
-              <h3 className="text-2xl font-semibold mb-6">Informaci贸n de Contacto</h3>
+            <div className="bg-gradient-to-br from-purple-600 via-indigo-600 to-purple-700 p-8 rounded-2xl shadow-2xl text-white relative overflow-hidden">
+              {/* Decorative elements */}
+              <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full blur-3xl"></div>
+              
+              <div className="relative z-10">
+                <h3 className="text-2xl font-semibold mb-6 flex items-center">
+                  <span className="w-1 h-8 bg-white/30 rounded-full mr-3"></span>
+                  Informaci贸n de Contacto
+                </h3>
               <div className="space-y-5">
                 <div className="flex items-start">
                   <div className="bg-white bg-opacity-20 p-3 rounded-full mr-4 shrink-0">
@@ -210,7 +221,7 @@ const ContactSection = () => {
                     <h4 className="font-semibold text-white mb-1">Direcci贸n</h4>
                     <p className="text-purple-100 opacity-90">
                       Gran Via Asima, 31, piso 3 oficina 11<br />
-                      Norte, 07009 Palma, Balearic Islands, Espa馻
+                      Norte, 07009 Palma, Balearic Islands, Espa锟絘
                     </p>
                   </div>
                 </div>
@@ -233,11 +244,14 @@ const ContactSection = () => {
                   </div>
                 </div>
               </div>
+              </div>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-2xl shadow-md border border-gray-100 flex-grow">
+            <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-xl border border-gray-100 flex-grow">
               <h3 className="text-2xl font-semibold mb-6 flex items-center text-gray-800">
-                <Clock className="h-6 w-6 mr-3 text-purple-600"/>
+                <div className="bg-purple-100 rounded-full p-2 mr-3">
+                  <Clock className="h-6 w-6 text-purple-600"/>
+                </div>
                 Horario de Atenci贸n
               </h3>
               <div className="space-y-3">

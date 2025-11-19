@@ -6,13 +6,13 @@ const tutors = [
     name: 'Javier Prada Oliva',
     image: '/assets/javier.jpg',
     linkedin: 'https://www.linkedin.com/in/javier-prada-oliva/',
-    description: 'Profesor FP Informática | Dinamizador e impulsor de Comunidades Educativas Iberoamericanas | Asesor de Tecnologías Educativas | Co-fundador de IAEducativa y Competencia Digital Cero (ONGs)'
+    description: 'Profesor FP Informática | Dinamizador e impulsor de Comunidades Educativas Iberoamericanas | Asesor de Tecnologías Educativas | Co-fundador de Competencia Digital Cero (ONG)'
   },
   {
     name: 'Salvador Montaner',
     image: '/assets/salvador.jpg',
     linkedin: 'https://www.linkedin.com/in/salvadormontanervillalba/',
-    description: 'Líder en Innovación Educativa con IA | Consultor en Transformación Digital Docente | CEO EduRevolution AI | salvadormontaner.com & IAEducativa.org'
+    description: 'Líder en Innovación Educativa con IA | Consultor en Transformación Digital Docente | CEO EduRevolution AI | salvadormontaner.com'
   },
   {
     name: 'Abraham Bravo',
@@ -46,7 +46,7 @@ export const EducationTutorsBanner: React.FC = () => (
         {tutors.map((tutor, index) => (
           <div key={tutor.name} className="bg-purple-50 p-6 rounded-xl shadow-lg flex flex-col items-center border border-purple-100 hover:shadow-xl transition-shadow">
             <a href={tutor.linkedin} target="_blank" rel="noopener noreferrer">
-              <img src={tutor.image} alt={tutor.name} className="w-20 h-20 rounded-full object-cover border-2 border-purple-300 mb-3 hover:scale-105 transition-transform" />
+              <img src={tutor.image} alt={tutor.name} className="w-20 h-20 rounded-full object-cover border-2 border-purple-300 mb-3 hover:scale-105 transition-transform" loading="lazy" />
             </a>
             <a href={tutor.linkedin} target="_blank" rel="noopener noreferrer" className="font-semibold text-purple-900 hover:underline text-lg mb-1 flex items-center gap-1">
               {tutor.name}

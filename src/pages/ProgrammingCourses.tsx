@@ -498,7 +498,7 @@ const ProgrammingCourses = () => {
               <div className="bg-white p-3 sm:p-4 rounded-lg shadow-2xl">
                 <img
                   className="w-full object-cover h-[300px] lg:h-[400px] rounded-md" // Added rounded-md
-                  src="/assets/img11.png" // MODIFICADO: Ruta de la nueva imagen
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
                   alt="Profesional IA trabajando con iluminación Ciberpunk"
                 />
                 <div className="pt-3 sm:pt-4">

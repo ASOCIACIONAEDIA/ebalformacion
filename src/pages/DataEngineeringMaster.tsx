@@ -182,11 +182,6 @@ const DataEngineeringMaster = () => {
   // Ventajas del master
   const advantages = [
     {
-      title: 'Doble Titulación Ebal Formacion + Universitaria',
-      description: 'Título oficial avalado por SABAL University (tasas incluidas)',
-      icon: <Award className="h-8 w-8 text-purple-600" />
-    },
-    {
       title: 'Mentores Expertos',
       description: 'Profesionales trabajando en empresas tecnológicas líderes',
       icon: <Users className="h-8 w-8 text-blue-600" />
@@ -235,15 +230,16 @@ const DataEngineeringMaster = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section con Formulario Visible */}
-      <div className="relative bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 pt-32 pb-20 overflow-hidden">
+      <div className="relative bg-gradient-to-br from-orange-700 via-red-800 to-pink-900 pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         
         {/* Imagen de fondo */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/img1.png"
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
             alt="Data Engineer trabajando"
             className="w-full h-full object-cover opacity-30"
+            loading="eager"
           />
         </div>
 
@@ -795,7 +791,7 @@ const DataEngineeringMaster = () => {
             {/* Pregunta 1 */}
             <div className="bg-gray-50 rounded-xl shadow-md p-6">
               <h3 className="text-base md:text-lg font-semibold text-blue-700 mb-2">1. ¿Qué diferencia hay entre este Master y otros programas de Data Engineering?</h3>
-              <p className="text-gray-700 text-sm md:text-base">Nuestro Master incluye doble titulación (Ebal Formacion + SABAL University con tasas incluidas), certificación cloud oficial (Azure o AWS), acceso durante 18 meses, soporte tutor online con videoclases y un enfoque 100% práctico con proyectos reales. Además, nuestra plataforma gamificada hace el aprendizaje más efectivo y motivador.</p>
+              <p className="text-gray-700 text-sm md:text-base">Nuestro Master incluye certificación cloud oficial (Azure o AWS), acceso durante 18 meses, soporte tutor online con videoclases y un enfoque 100% práctico con proyectos reales. Además, nuestra plataforma gamificada hace el aprendizaje más efectivo y motivador.</p>
             </div>
             {/* Pregunta 2 */}
             <div className="bg-gray-50 rounded-xl shadow-md p-6">

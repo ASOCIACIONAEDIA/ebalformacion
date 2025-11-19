@@ -27,9 +27,9 @@ const IAFundamentalsPage = () => {
   const [dynamicEndingText, setDynamicEndingText] = useState('');
   const [isEndingTypingComplete, setIsEndingTypingComplete] = useState(false);
   
-  const endingFullText = "¡El momento de la IA es ahora y tú puedes ser parte de él!";
-  const endingHighlightStart = endingFullText.indexOf('ahora');
-  const endingHighlightEnd = endingHighlightStart + 'ahora'.length;
+  const endingFullText = "Transforma tu futuro profesional con formación especializada en SAP e Inteligencia Artificial";
+  const endingHighlightStart = endingFullText.indexOf('SAP e Inteligencia Artificial');
+  const endingHighlightEnd = endingHighlightStart + 'SAP e Inteligencia Artificial'.length;
   const endingTypingSpeed = 60;
   const endingPauseAfterComplete = 4000;
 
@@ -176,7 +176,18 @@ const IAFundamentalsPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section con Formulario */}
-      <section className="relative bg-gradient-to-br from-blue-900 to-teal-800 text-white py-16 pb-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-violet-700 via-purple-800 to-fuchsia-900 text-white py-16 pb-24 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+            alt="Formación en Inteligencia Artificial"
+            className="w-full h-full object-cover opacity-20"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-violet-700/80 via-purple-800/80 to-fuchsia-900/80"></div>
+        </div>
+        
         {/* Animated Shapes Background */}
         <div className="absolute inset-0 opacity-50 z-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
@@ -232,55 +243,15 @@ const IAFundamentalsPage = () => {
                 </div>
               </div>
 
-              {/* Logos Section */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.8 }}
-                className="mt-8"
-              >
-                <div className="flex flex-wrap justify-center lg:justify-center items-center gap-4 md:gap-6 lg:ml-12">
-                  <img 
-                    src="/assets/Sello EQS.png" 
-                    alt="Sello EQS" 
-                    className="h-12 md:h-14 object-contain opacity-80 hover:opacity-100 transition-opacity"
-                  />
-                  <img 
-                    src="/assets/logo-Ebal Formacion.png" 
-                    alt="Ebal Formacion Logo" 
-                    className="h-12 md:h-14 object-contain opacity-80 hover:opacity-100 transition-opacity"
-                  />
-                  <img 
-                    src="/assets/Logo UAIII.png" 
-                    alt="UAIII Logo" 
-                    className="h-12 md:h-14 object-contain opacity-80 hover:opacity-100 transition-opacity"
-                  />
-                  <img 
-                    src="/assets/LOGO SABAL VERTICAL.png" 
-                    alt="Sabal University Logo" 
-                    className="h-14 md:h-16 object-contain opacity-80 hover:opacity-100 transition-opacity"
-                  />
-                  <img 
-                    src="/assets/Agencia Universitaria DQ.png" 
-                    alt="Agencia Universitaria DQ" 
-                    className="h-12 md:h-14 object-contain opacity-80 hover:opacity-100 transition-opacity"
-                  />
-                </div>
-                <div className="flex flex-col sm:flex-row gap-4 flex-wrap justify-center mt-8">
-                  <button 
-                    onClick={() => setIsEnrollmentModalOpen(true)}
-                    className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-medium hover:bg-yellow-500 transition-colors text-lg shadow-lg"
-                  >
-                    Matricúlate Ahora
-                  </button>
-                  <button
-                    onClick={() => setIsSyllabusModalOpen(true)}
-                    className="flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-900 transition-colors"
-                  >
-                    <Play className="h-5 w-5 mr-2" /> Descargar Temario Completo
-                  </button>
-                </div>
-              </motion.div>
+              {/* Botón Descargar Temario */}
+              <div className="flex flex-col sm:flex-row gap-4 flex-wrap justify-start mt-8">
+                <button
+                  onClick={() => setIsSyllabusModalOpen(true)}
+                  className="flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-900 transition-colors"
+                >
+                  <Play className="h-5 w-5 mr-2" /> Descargar Temario Completo
+                </button>
+              </div>
             </motion.div>
 
             {/* Right Column: Formulario */}

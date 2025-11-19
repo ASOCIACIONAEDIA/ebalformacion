@@ -90,14 +90,22 @@ const StatsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-1"
+          className="bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 rounded-3xl p-1 shadow-2xl"
         >
-          <div className="bg-white rounded-xl py-10 px-6">
+          <div className="bg-white rounded-2xl py-12 px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <Stat end={15} suffix="+" title="Años de Experiencia" delay={0} />
-              <Stat end={1000} suffix="+" title="Profesionales Formados" delay={200} />
-              <Stat end={50} suffix="+" title="Proyectos Completados" delay={400} />
-              <Stat end={95} suffix="%" title="Satisfacción Cliente" delay={600} />
+              <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+                <Stat end={15} suffix="+" title="Años de Experiencia" delay={0} />
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+                <Stat end={1000} suffix="+" title="Profesionales Formados" delay={200} />
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+                <Stat end={50} suffix="+" title="Proyectos Completados" delay={400} />
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+                <Stat end={95} suffix="%" title="Satisfacción Cliente" delay={600} />
+              </motion.div>
             </div>
           </div>
         </motion.div>

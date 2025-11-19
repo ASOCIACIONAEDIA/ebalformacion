@@ -38,7 +38,7 @@ export type Course = {
 
 
 // Placeholder instructor data simplified
-const defaultTutorSupport = "Equipo Docente AEDIA";
+const defaultTutorSupport = "Equipo Docente Ebal Formacion";
 const sabalUniversity = {
   universityName: "Sabal University",
   logoUrl: "/assets/LOGO SABAL VERTICAL.png", // Verify this path
@@ -65,10 +65,10 @@ export const bonificableCourses: Course[] = [
     shortDescription: 'Desarrolla aplicaciones de IA avanzadas y domina los modelos de última generación.',
     imageUrl: updatedImageUrls['ia-educacion'],
     duration: '8-12 Semanas',
-    certification: 'AEDIA & Universidades Colaboradoras',
+    certification: 'Ebal Formacion & Universidades Colaboradoras',
     isBonificable: true,
     price: 520, 
-    financingInfo: 'Consulta las opciones de financiación - 30% Descuento socio Intedua',
+    financingInfo: 'Consulta las opciones de financiación',
     fundaeInfo: '100% Bonificable con FUNDAE',
     type: 'bonificable', 
     preparationDetails: 'Este curso te prepara para diseñar e implementar soluciones de IA que personalizan el aprendizaje, automatizan tareas administrativas y potencian la creatividad en el aula. Dominarás herramientas clave y estrategias pedagógicas innovadoras.',
@@ -97,7 +97,7 @@ export const bonificableCourses: Course[] = [
     shortDescription: 'Domina IA Generativa, explora modelos y crea agentes inteligentes desde cero. Proyecto práctico incluido.',
     imageUrl: '/assets/robot (1).png', // Usando la imagen del robot que está en assets
     duration: '40 horas',
-    certification: 'AEDIA & SABAL',
+    certification: 'Ebal Formacion & SABAL',
     isBonificable: true,
     price: 55, 
     financingInfo: 'Consulta las opciones de financiación',
@@ -130,7 +130,7 @@ export const bonificableCourses: Course[] = [
     shortDescription: 'Aprende a implementar políticas de desconexión digital y prevenir riesgos laborales asociados.',
     imageUrl: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     duration: '8 Horas',
-    certification: 'AEDIA',
+    certification: 'Ebal Formacion',
     isBonificable: true,
     price: 140, 
     financingInfo: 'Consulta las opciones de financiación',
@@ -163,7 +163,7 @@ export const bonificableCourses: Course[] = [
     shortDescription: 'Domina la IA sin programar: crea chatbots, automatiza tareas y genera contenido multimedia con herramientas NoCode.',
     imageUrl: '/assets/noc.png', // Cambio a la imagen NoCode
     duration: '12 Semanas', 
-    certification: 'AEDIA & Universidades Colaboradoras',
+    certification: 'Ebal Formacion & Universidades Colaboradoras',
     isBonificable: true,
     price: 420,
     financingInfo: 'Consulta las opciones de financiación',
@@ -199,7 +199,7 @@ export const bonificableCourses: Course[] = [
     shortDescription: 'Domina el marketing del futuro: SEO inteligente, contenido generativo, análisis predictivo y automatización con IA.',
     imageUrl: '/assets/mk.png', // NEW IMAGE
     duration: '10 Semanas', 
-    certification: 'AEDIA & Universidades Colaboradoras',
+    certification: 'Ebal Formacion & Universidades Colaboradoras',
     isBonificable: true,
     price: 420,
     financingInfo: 'Consulta las opciones de financiación',
@@ -240,7 +240,7 @@ export const programmingCourses: Course[] = [
     shortDescription: 'El programa más completo para convertirte en ingeniero de IA. Incluye proyectos reales, tutores expertos y bolsa de empleo.',
     imageUrl: '/assets/img11.png',
     duration: '6 meses',
-    certification: 'AEDIA & Universidades Colaboradoras',
+    certification: 'Ebal Formacion & Universidades Colaboradoras',
     isBonificable: false,
     price: undefined,
     financingInfo: 'Consulta las opciones de financiación',
@@ -256,7 +256,7 @@ export const programmingCourses: Course[] = [
       'Desplegarás modelos en producción.',
       'Accederás a bolsa de empleo y prácticas.',
     ],
-    tutorSupport: 'Equipo Docente AEDIA & Colaboradores',
+    tutorSupport: 'Equipo Docente Ebal Formacion & Colaboradores',
     universityTitration: undefined,
     syllabusUrl: '/assets/Temario Bootcamp IA Engineer.pdf',
     heroColors: ['bg-yellow-400', 'bg-purple-600', 'bg-blue-500', 'bg-fuchsia-500'],
@@ -268,7 +268,7 @@ export const programmingCourses: Course[] = [
     shortDescription: 'Conviértete en experto en arquitecturas de datos, Big Data y Cloud. Incluye certificación Azure o AWS.',
     imageUrl: '/assets/img1.png',
     duration: '9-10 meses',
-    certification: 'AEDIA & Universidades Colaboradoras + Azure/AWS',
+    certification: 'Ebal Formacion & Universidades Colaboradoras + Azure/AWS',
     isBonificable: false,
     price: 3900,
     financingInfo: 'Consulta las opciones de financiación',

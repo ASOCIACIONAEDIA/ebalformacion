@@ -17,6 +17,7 @@ const CourseCardContent = ({ course, priceDisplay }: {
           src={course.imageUrl} 
           alt={course.title} 
           className="w-full h-48 md:h-full object-cover transition-transform duration-300 group-hover:scale-105" 
+          loading="lazy"
         />
         <div className="absolute top-3 right-3 bg-black bg-opacity-60 text-white text-xs font-semibold px-2 py-1 rounded">
           {course.id === 'bootcamp-ai-engineer' ? 'BOOTCAMP' : 'CURSO PROGRAMACIÓN'}

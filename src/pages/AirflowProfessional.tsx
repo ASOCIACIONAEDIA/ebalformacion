@@ -176,9 +176,10 @@ const AirflowProfessional = () => {
         {/* Imagen de fondo */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
             alt="Apache Airflow Data Pipeline"
             className="w-full h-full object-cover opacity-30"
+            loading="eager"
           />
         </div>
 

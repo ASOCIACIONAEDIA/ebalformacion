@@ -21,6 +21,7 @@ const CertificationsSection = () => {
                     src="https://images.credly.com/size/340x340/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png" 
                     alt="AZ-900 Azure Fundamentals" 
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
+                    loading="lazy"
                   />
                   <div className="absolute top-3 right-3 bg-black bg-opacity-60 text-white text-xs font-semibold px-2 py-1 rounded">
                     CERTIFICACIÓN
@@ -69,6 +70,7 @@ const CertificationsSection = () => {
                     src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" 
                     alt="AWS Cloud Practitioner" 
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
+                    loading="lazy"
                   />
                   <div className="absolute top-3 right-3 bg-black bg-opacity-60 text-white text-xs font-semibold px-2 py-1 rounded">
                     CERTIFICACIÓN
