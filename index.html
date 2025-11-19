@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/assets/ebal-favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Ebal Formacion - Formación profesional especializada en Inteligencia Artificial, SAP y Transformación Digital." />
+  <title>Ebal Formacion - Formación en IA y SAP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <!-- Cookiebot (CMP) -->
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5a972822-692a-48c5-a42e-f683ad7d48e5"
+    data-blockingmode="auto" type="text/javascript"></script>
+
+  <!-- 🔥 LIMPIAR DATALAYER DE CÓDIGOS DUPLICADOS (omitir en modo preview/debug de GTM) -->
+  <script>
+    (function () {
+      var qs = window.location.search || '';
+      var isPreview = qs.indexOf('gtm_debug=') !== -1 || qs.indexOf('gtm_preview=') !== -1 || qs.indexOf('tagassistant=') !== -1;
+      if (!isPreview) {
+        window.dataLayer = [];
+        console.log('🧹 DataLayer cleaned for custom GTM server');
+      } else {
+        console.log('🧪 GTM Preview detected: dataLayer cleanup skipped');
+      }
+    })();
+  </script>
+
+  <!-- Cookiebot -> Google Consent Mode (callbacks) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { dataLayer.push(arguments); };
+    // Cookiebot callbacks
+    window.addEventListener('CookiebotOnAccept', function () {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted',
+        ad_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted'
+      });
+      console.log('✅ Cookiebot accept -> Consent granted');
+    });
+    window.addEventListener('CookiebotOnDecline', function () {
+      gtag('consent', 'update', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      });
+      console.log('⚠️ Cookiebot decline -> Consent denied');
+    });
+  </script>
+
+  <!-- Google Tag Manager (Servidor Personalizado Anti-Bloqueadores) -->
+  <script
+    data-cookieconsent="ignore">(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s); j.async = true; j.src = "https://lnzvohke.eui.stape.net/bp8lnzvohke.js?" + i; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', '5xvey0y=aWQ9R1RNLU5HVkRaSjVH&pi=hyQOu');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Tag Manager (Servidor Estándar Google) -->
+  <script data-cookieconsent="ignore">(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NGVDZJ5G');</script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) - Servidor Personalizado -->
+  <noscript><iframe src="https://lnzvohke.eui.stape.net/ns.html?id=GTM-NGVDZJ5G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Google Tag Manager (noscript) - Servidor Estándar Google -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGVDZJ5G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Meta Pixel Code (noscript) -->
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=3652710014944785&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Meta Pixel Code (noscript) -->
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
